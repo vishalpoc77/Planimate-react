@@ -26,6 +26,7 @@ workflows:
 
       - name: Clean previous builds
         script: |
+          rm patches/reactotron-core-client+2.9.3.patch
           rm -rf node_modules package-lock.json patches
           npm cache clean --force
           npm install
