@@ -30,12 +30,11 @@ workflows:
           rm -rf node_modules package-lock.json patches
           npm cache clean --force
           npm install
-          npm install
 
-      - name: Run Expo Prebuild
-        script: |
-          npm install expo
-          npx expo prebuild
+      # name: Run Expo Prebuild
+        #script: |
+          #npm install expo
+          #npx expo prebuild
 
       # name: Set up app/build.gradle
         #script: |
