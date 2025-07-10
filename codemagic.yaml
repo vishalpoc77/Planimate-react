@@ -19,6 +19,7 @@ workflows:
         script: |
           rm -f yarn.lock
           npm install --legacy-peer-deps
+          npm install @react-native-community/cli-platform-android
           npm install react@19.1.0 react-native@0.80.0 expo@~53.0.12
           npm uninstall react-navigation
           npm install @react-navigation/native react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context
